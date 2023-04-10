@@ -241,6 +241,9 @@ input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
+.shortcut_link {
+  cursor: pointer;
+}
 
 @media all and (max-width: 1180px) {
   .picture {
