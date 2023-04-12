@@ -137,18 +137,24 @@
         });
       }
       let index = 0,
-        next = null;
+        //next=null;
+        prev = null;
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      /*next =
+      imagesCollection[index] ||
+      imagesCollection[imagesCollection.length - 1];
+    $(".lightboxImage").attr("src", $(next).attr("src"));
+  },*/
+      //debut changement
+      prev = imagesCollection[index - 1] || imagesCollection[0];
+      $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
+    //fin changement
     nextImage() {
       let activeImage = null;
       $("img.gallery-item").each(function () {
@@ -179,9 +185,15 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+
+      /* next = imagesCollection[index] || imagesCollection[0];*/
+      //debut changement
+      next =
+        imagesCollection[index + 1] ||
+        imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+    //fin changement
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
