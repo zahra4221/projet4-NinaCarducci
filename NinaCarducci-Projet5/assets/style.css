@@ -91,7 +91,7 @@ body {
 }
 
 #gallery {
-  /*	min-height: 100vh; */
+  /*min-height: 100vh;*/
 }
 .title {
   text-align: center;
@@ -100,24 +100,15 @@ body {
 .gallery .nav {
   justify-content: center;
 }
-/*.nav-pills .nav-link.active,
-.nav-link.active .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active {
   color: #fff;
   background-color: #beb45a;
   border-radius: 0;
-}
-*/
-.nav-pills .nav-link.active,
-.nav-link.active .nav-pills .show > .nav-link,
-.nav-pills .nav-link:hover {
-  color: #fff;
-  background-color: #beb45a;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 .nav-pills .nav-link {
   color: #000;
+  cursor: pointer;
 }
 .item-column {
   position: relative;
