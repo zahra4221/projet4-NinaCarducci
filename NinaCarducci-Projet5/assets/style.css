@@ -82,10 +82,10 @@ body {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
-  font-size: medium;
+  font-size: 16px;
   width: 60%;
 }
-#about-me p {
+.paragraph1 {
   width: 80%;
   font-size: 14px;
 }
@@ -150,13 +150,18 @@ body {
   font-family: "Spectral", "Georgia", serif;
   font-style: italic;
   font-weight: 300;
+  font-size: 40px;
 }
 .quote__author {
   font-family: "Spectral", "Georgia", serif;
   font-weight: 800;
   font-size: 22px;
 }
-
+.price_photo {
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Spectral", "Georgia", serif;
+}
 #services {
   margin: auto;
   background-color: #a8d5d8;
