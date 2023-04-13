@@ -136,6 +136,7 @@
           }
         });
       }
+
       let index = 0,
         //next=null;
         prev = null;
@@ -151,7 +152,9 @@
     $(".lightboxImage").attr("src", $(next).attr("src"));
   },*/
       //debut changement
-      prev = imagesCollection[index - 1] || imagesCollection[0];
+      prev =
+        imagesCollection[index - 1] ||
+        imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
     //fin changement
@@ -188,9 +191,7 @@
 
       /* next = imagesCollection[index] || imagesCollection[0];*/
       //debut changement
-      next =
-        imagesCollection[index + 1] ||
-        imagesCollection[imagesCollection.length - 1];
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     //fin changement
